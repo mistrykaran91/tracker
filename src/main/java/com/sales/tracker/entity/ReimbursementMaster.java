@@ -16,7 +16,7 @@ import java.util.List;
 @Table(name = "reimbursement_master")
 public class ReimbursementMaster extends BaseEntity {
 
-    @Column(name = "reimbursement_date", nullable = false)
+    @Column(name = "reimbursement_date", nullable = false, unique = true)
     private Date reimbursementDate;
 
     @Column(name = "description", nullable = false)

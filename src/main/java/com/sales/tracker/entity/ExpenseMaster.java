@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Table(name = "expense_master")
 public class ExpenseMaster extends BaseEntity {
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
 
     @Column(name = "description", nullable = false)
